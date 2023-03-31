@@ -1,24 +1,26 @@
 import Link from 'next/link';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 const Navbar = () => {
   return (
-    <div className="font-Roboto text-[#7a7a7a] pt-12 text-xl">
+    <div className=" text-[#7a7a7a] pt-12 text-xl">
       <div className="flex flex-row items-center justify-between">
-        <h5 className=" font-normal text-3xl">
+        <h5 className=" font-normal lg:text- text-3xl text-[#61ce70]">
           <Link href="/">Ehsan.</Link>
         </h5>
-        <div className=" hidden md:flex flex-row items-center ">
-          <ul className="flex flex-row items-center space-x-8">
-            <li>
+        {/* <div className='md:hidden text-4xl'><HiOutlineMenuAlt3/></div> */}
+        <div className="flex flex-row items-center ">
+          <ul className="hidden md:flex flex-row items-center space-x-8">
+            <li className="hover:text-[#61ce70]">
               <Link href="#about">About</Link>
             </li>
-            <li>
+            <li className="hover:text-[#61ce70]">
               <Link href="#resume">Resume</Link>
             </li>
-            <li>
+            <li className="hover:text-[#61ce70]">
               <Link href="#work">Work</Link>
             </li>
-            <li>
+            <li className="hover:text-[#61ce70]">
               <Link href="#contact">Contact</Link>
             </li>
           </ul>
