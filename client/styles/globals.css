@@ -18,7 +18,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
+span{
+  color:#61ce70;
+}
 
 @media screen and (max-width:786) {
   body{

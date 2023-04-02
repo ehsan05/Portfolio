@@ -3,8 +3,8 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
   return (
     <>
-      <div className="h-[500px] flex items-center justify-center text-white">
-        <div className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+      <div className="h-[90vh] w-full flex items-center justify-center text-white font-Roboto">
+        <div className="flex items-center justify-center text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -29,10 +29,11 @@ const Hero = () => {
               loop: true,
             }}
           />
-          {/* <div className="text-xl f">
-            Hello! I'm <span className="text-[#61ce70]">Ehsan Ellahi</span>,Frontend Developer based in Pakistan.
-          </div> */}
         </div>
+        {/* <div className="text-xl font-normal">
+          Hello! I'm <span className="text-[#61ce70]">Ehsan Ellahi</span>
+          ,Frontend Developer based in Pakistan.
+        </div> */}
       </div>
     </>
   );
